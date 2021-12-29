@@ -22,6 +22,17 @@
             color: rgba(255, 255, 255, 0.7);
             font-family: "微软雅黑";
         }
+        .button-replay{
+            font-size: 30px;
+            text-decoration: none;
+            background: red;
+            padding: 10px;
+            color: #ffff;
+            border-radius: 10px;
+        }
+        .button-replay:hover{
+            background: rgb(226, 14, 14);
+        }
     </style>
 </head>
 <body>
@@ -33,7 +44,7 @@
 <script src="./js/pipe.js"></script>
 <script src="./js/sky.js"></script>
 <script src="./js/land.js"></script>
-<a href="index.html">Chơi lại</a>
+<a class="button-replay" href="index.html">Chơi lại</a>
 <script>
 
     //    var cvs = document.getElementById("cvs");
@@ -81,10 +92,10 @@
         //图片路径
         var imgsPath = {
             "birds": "./imgs/birds.png",
-            "land": "./imgs/land.png",
-            "pipeDown": "./imgs/pipeDown.png",
-            "pipeUp": "./imgs/pipeUp.png",
-            "sky": "./imgs/sky.png"
+            "land": "./imgs/bkland.png",
+            "pipeDown": "./imgs/bkpipeDown.png",
+            "pipeUp": "./imgs/bkpipeUp.png",
+            "sky": "./imgs/bksky.png"
         };
 
         var imgs = {};//用来存放图片
